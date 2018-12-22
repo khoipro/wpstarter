@@ -28,7 +28,7 @@ class wpstarter_Customizer {
 		 */
 		$wp_customize->add_setting( 'footer_copyright_text_setting',
 			array(
-				'default' => __('Copyright &copy; %s by %s', date('Y'), get_bloginfo('name')),
+				'default' => __('Copyright &copy; 2019 by Your Site. All right reserved.'),
 				'transport' => 'refresh',
 				'sanitize_callback' => 'wp_filter_nohtml_kses'
 			)
