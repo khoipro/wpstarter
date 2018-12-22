@@ -4,7 +4,7 @@
 
 A Webpack WordPress Starter Theme for Gutenberg development with webpack, browsersync and SASS support. I'd like to keep a simple flow. As **#Gutenberg** ideas, I just try to bring as much as backend style will bring the same frontend style to match "what you see is what you get" (WYSIWYG).
 
-Some of my code was taken from my older #WordPress base theme - **[wpbase](https://github.com/khoipro/wpbase)**. This project was used with `gulpfile.js`, `livereload ` extension.
+Some of my code was taken from my older #WordPress base theme - **[wpbase](https://github.com/khoipro/wpbase)**. It was used with `gulpfile.js`, `livereload ` extension.
 
 ## Why choose this starter theme
 
