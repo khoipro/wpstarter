@@ -7,6 +7,6 @@
 
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 	<div class="wrapper">
+		<?php get_template_part('modules/header'); ?>
