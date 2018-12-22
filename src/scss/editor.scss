@@ -1,0 +1,7 @@
+/**
+This loads any block styling for backend only
+ */
+
+body {
+  @import 'blocks/**/editor';
+}

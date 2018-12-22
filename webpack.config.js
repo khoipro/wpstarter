@@ -9,7 +9,7 @@ const path = require( 'path' );
 const webpack = require( 'webpack' );
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
-const URL = 'http://core.test';
+const URL = 'http://cares.test';
 
 module.exports = function() {
 
@@ -39,9 +39,11 @@ module.exports = function() {
 			'./src/js/blocks.js',
         ],
         editor: [
-            './src/js/editor.js',
             './src/scss/editor.scss',
         ],
+		customizer: [
+			'./src/js/customizer.js'
+		]
     };
 
     const loaders = {
