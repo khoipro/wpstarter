@@ -1,0 +1,58 @@
+// Breakpoints
+$mobile: 600px;
+$tablet: 768px;
+$desktop: 1168px;
+$wide: 1379px;
+
+// Layout
+$columns: (
+		1: calc(1 * (100vw / 12)),
+		2: calc(2 * (100vw / 12)),
+		3: calc(3 * (100vw / 12)),
+		4: calc(4 * (100vw / 12)),
+		5: calc(5 * (100vw / 12)),
+		6: calc(6 * (100vw / 12)),
+		7: calc(7 * (100vw / 12)),
+		8: calc(8 * (100vw / 12)),
+		9: calc(9 * (100vw / 12)),
+		10: calc(10 * (100vw / 12)),
+		11: calc(11 * (100vw / 12)),
+		12: calc(12 * (100vw / 12))
+);
+$column-sidebar: percentage(1/4);
+$column-main: 100%;
+$column-mobile-gutter: 20px;
+$column-tablet-gutter: 40px;
+$column-desktop-gutter: 60px;
+$column-wide-gutter: 80px;
+
+// Typography
+$font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$font-heading: $font-body;
+$font-code: Menlo, monaco, Consolas, Lucida Console, monospace;
+$font-pre: "Courier 10 Pitch", Courier, monospace;
+
+$font-base: 16px;
+$line-height: 1.6;
+
+// Colors
+$c-white: #fff;
+$c-black: #000;
+$c-primary: #0073aa;
+
+$c-text: #333;
+$c-text-light: #767676;
+$c-text-dark: #111;
+$c-text-input: #666;
+
+$c-background: $c-white;
+$c-background-input: $c-white;
+$c-background-hr: #ccc;
+$c-background-pre: #eee;
+$c-background-button: $c-primary;
+
+$c-link: $c-primary;
+$c-link-visited: #0073aa;
+$c-link-hover: darken($c-link, 10%);
+
+$c-border: #ccc;

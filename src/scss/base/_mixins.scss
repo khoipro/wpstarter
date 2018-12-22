@@ -1,0 +1,38 @@
+@mixin font-size($sizeValue: 1) {
+  font-size: ($sizeValue * 16) * 1px;
+  font-size: $sizeValue * 1rem;
+}
+
+@mixin media( $res ) {
+  @if mobile == $res {
+	@media only screen and (min-width: $mobile) {
+	  @content;
+	}
+  }
+
+  @if tablet == $res {
+	@media only screen and (min-width: $tablet) {
+	  @content;
+	}
+  }
+
+  @if desktop == $res {
+	@media only screen and (min-width: $desktop) {
+	  @content;
+	}
+  }
+
+  @if wide == $res {
+	@media only screen and (min-width: $wide) {
+	  @content;
+	}
+  }
+}
+
+@mixin transition( $attr: all, $time: 0.3s, $type: ease-in-out ) {
+  transition: $attr $time $type;
+}
+
+@mixin column-width($numberColumns: 3, $columns-margin: 20px) {
+  width: map-get($columns, $numberColumns) - (($columns-margin * ($numberColumns - 1)) / $numberColumns);
+}

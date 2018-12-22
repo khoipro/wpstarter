@@ -6,6 +6,10 @@ body, html {
 
 }
 
-.wrapper {}
-.site-main {}
-.site-content {}
+#page {
+  width: 100%;
+}
+
+.site-content {
+  overflow: hidden;
+}

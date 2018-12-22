@@ -5,5 +5,10 @@ This file loads in frontend and append styling to global modules like Header, Fo
 @import 'base/normalize';
 @import 'base/reset';
 
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/typography';
+@import 'base/layout';
+
 @import 'modules/header';
 @import 'modules/footer';

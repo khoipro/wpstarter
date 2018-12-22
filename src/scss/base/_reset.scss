@@ -38,12 +38,11 @@ tr, th, td {
  * *********************************** */
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
 body {
-  font-size: 1.6rem;
-  line-height: 1.4;
+  margin: 0;
 }
 
 * {
@@ -123,18 +122,4 @@ q:before {
 
 [disabled] {
   cursor: not-allowed;
-}
-
-:focus:not(:focus-visible) {
-  outline: none;
-}
-
-/* Utility classes
- * *********************************** */
-
-.sr-only {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  left: -9999px;
-  top: -9999px;
 }

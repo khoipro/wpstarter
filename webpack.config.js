@@ -38,9 +38,10 @@ module.exports = function() {
             './src/scss/blocks.scss',
 			'./src/js/blocks.js',
         ],
-        editor: [
-            './src/scss/editor.scss',
-        ],
+		editor: [
+			'./src/scss/editor.scss',
+			'./src/js/editor.js'
+		],
 		customizer: [
 			'./src/js/customizer.js'
 		]
