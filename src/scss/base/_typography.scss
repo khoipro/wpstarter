@@ -8,11 +8,12 @@ body {
   color: $c-text;
   font-family: $font-body;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: $line-height;
   text-rendering: optimizeLegibility;
 }
 
+p,
 button,
 input,
 select,
@@ -32,8 +33,3 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-h1 {
-
-}
-
