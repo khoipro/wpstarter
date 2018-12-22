@@ -61,7 +61,7 @@ I wish to hear more ideas from you and your team. I've share this theme via chan
 
 ## Inspiration
 
-- [normalize.css, about reset css](https://github.com/necolas/normalize.css/blob/master/normalize.css)
-- [Twenty Nineteen, about WordPress backend and structure](https://github.com/WordPress/twentynineteen)
-- [WPScholar, about Webpack flow](https://github.com/wpscholar/)
+- [normalize.css](https://github.com/necolas/normalize.css/blob/master/normalize.css) - my favourite css reset
+- [Twenty Nineteen](https://github.com/WordPress/twentynineteen) - about WordPress backend and structure
+- [WPScholar](https://github.com/wpscholar/) - about Webpack flow
 
