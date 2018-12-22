@@ -9,7 +9,7 @@ const path = require( 'path' );
 const webpack = require( 'webpack' );
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
-const URL = 'http://cares.test';
+const URL = 'http://your-local-domain.test';
 
 module.exports = function() {
 
