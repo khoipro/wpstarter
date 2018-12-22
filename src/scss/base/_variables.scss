@@ -21,10 +21,9 @@ $columns: (
 );
 $column-sidebar: percentage(1/4);
 $column-main: 100%;
-$column-mobile-gutter: 20px;
-$column-tablet-gutter: 40px;
-$column-desktop-gutter: 60px;
-$column-wide-gutter: 80px;
+$column-gutter: 20px;
+$container-gutter: 14px;
+$container-gutter-tablet: 46px;
 
 // Typography
 $font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -54,5 +53,8 @@ $c-background-button: $c-primary;
 $c-link: $c-primary;
 $c-link-visited: #0073aa;
 $c-link-hover: darken($c-link, 10%);
+
+$c-text-screen: $c-primary;
+$c-background-screen: #f1f1f1;
 
 $c-border: #ccc;

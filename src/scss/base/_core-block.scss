@@ -1,0 +1,19 @@
+/**
+Quote Block
+ */
+
+.wp-block-quote {
+  @extend %block;
+  .wp-block-quote__citation {
+	@extend %p;
+	@extend %small;
+  }
+}
+
+/**
+Cover Block
+ */
+.wp-block-cover,
+.wp-block-cover-image {
+  @extend %block;
+}

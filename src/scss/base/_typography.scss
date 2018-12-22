@@ -13,13 +13,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-p,
-button,
-input,
-select,
-optgroup,
-figcaption,
-textarea {
+%p {
   color: $c-text;
   font-family: $font-body;
   font-weight: 400;
@@ -27,10 +21,78 @@ textarea {
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4, h5, h6 {
+%heading {
   font-family: $font-heading;
   font-weight: 700;
-  line-height: calc(#{$line-height} * 1.15);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+%small {
+  font-size: 85%;
+}
+
+%big {
+  font-size: 115%;
+}
+
+%block {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+p,
+button,
+input,
+select,
+optgroup,
+figcaption,
+ul li,
+ol li,
+blockquote cite,
+textarea {
+  @extend %p;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %heading;
+}
+
+/**
+Typography (matches backend)
+ */
+h2, h3, h4, ul, ol {
+  @extend %block;
+}
+
+h2 {
+  font-size: 1.95em;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.56em;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+
+/**
+List style
+ */
+ul {
+  margin-left: 1.3em;
+  padding-left: 1.3em;
+  list-style: disc;
+  li {
+	margin-bottom: 6px;
+  }
+  ul {
+	padding-left: 1.3em;
+	margin: 0 0 0 1.3em;
+	list-style: circle;
+  }
 }

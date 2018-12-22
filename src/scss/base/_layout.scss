@@ -3,7 +3,11 @@ body, html {
 }
 
 .container {
-
+  margin: 0 auto;
+  padding: 0 $container-gutter;
+  @include media(mobile) {
+	padding: 0 $container-gutter-tablet;
+  }
 }
 
 #page {
