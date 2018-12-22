@@ -9,6 +9,8 @@ const path = require( 'path' );
 const webpack = require( 'webpack' );
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
+const URL = 'http://core.test';
+
 module.exports = function() {
 
     const mode = process.env.NODE_ENV || 'development';
@@ -29,10 +31,12 @@ module.exports = function() {
     // The property names will be the file names, the values are the files that should be included.
     const entry = {
         main: [
-            './src/scss/main.scss'
+            './src/scss/main.scss',
+			'./src/js/main.js',
         ],
         blocks: [
             './src/scss/blocks.scss',
+			'./src/js/blocks.js',
         ],
         editor: [
             './src/js/editor.js',
@@ -170,7 +174,7 @@ module.exports = function() {
 			new BrowserSyncPlugin({
 				host: 'localhost',
 				port: 3000,
-				proxy: 'http://core.test'
+				proxy: URL
 			}),
             function() {
                 // Custom webpack plugin - remove generated JS files that aren't needed
