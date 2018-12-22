@@ -1,5 +1,7 @@
 # WPStarter
 
+![badge](https://user-images.githubusercontent.com/10395311/50375889-73f64c80-0637-11e9-917b-f6107ddda746.png)
+
 ![wordpress version support](https://img.shields.io/badge/WordPress-5.0+-blue.svg) ![gutenberg ready](https://img.shields.io/badge/Gutenberg-ready-green.svg) ![development status](https://img.shields.io/badge/Status-beta-red.svg)
 
 A Webpack WordPress Starter Theme for Gutenberg development with webpack, browsersync and SASS support. I'd like to keep a simple flow. As **#Gutenberg** ideas, I just try to bring as much as backend style will bring the same frontend style to match "what you see is what you get" (WYSIWYG).
