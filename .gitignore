@@ -1,2 +1,5 @@
 assets/*.min.css
 assets/*.min.js
+.DS_Store
+node_modules
+vendor
