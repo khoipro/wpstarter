@@ -14,6 +14,8 @@ Some of my code was taken from my older #WordPress base theme - **[wpbase](https
 - It has a **clean folder structure** with comments.
 - It has as much as many **example code** to keep you touch **Customizer**, **Widget**, **Custom Gutenberg Block** without installing a separate plugin.
 
+[Read more about my story...](https://khoipro.com/wp-starter-theme/)
+
 ## Theme Detail
 
 - Author: [khoipro](https://twitter.com/khoiprodotcom)
