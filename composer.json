@@ -1,0 +1,30 @@
+{
+  "name": "khoipro/wpstarter",
+  "description": "A Gutenberg WordPress starter theme.",
+  "type": "package",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+	"WordPress",
+	"Themes",
+	"Gutenberg"
+  ],
+  "authors": [
+	{
+	  "name": "khoipro",
+	  "homepage": "https://github.com/khoipro/wpstarter"
+	}
+  ],
+  "require-dev": {
+	"wptrt/wpthemereview": "^0.1.0",
+	"dealerdirect/phpcodesniffer-composer-installer": "^0.5.0"
+  },
+  "scripts": {
+	"phpcs-i": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs -i",
+	"lint": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+	"format": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf"
+  },
+  "support"    : {
+	"issues": "https://github.com/khoipro/wpstarter/issues",
+	"source": "https://github.com/khoipro/wpstarter"
+  }
+}
