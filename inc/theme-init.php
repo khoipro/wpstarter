@@ -102,5 +102,12 @@ function wpstarter_scripts() {
 add_action( 'wp_enqueue_scripts', 'wpstarter_scripts' );
 
 /**
- * Register Customizer style
+ * Register Blocks and Editor in backend and frontend
  */
+function wpstarter_editor_customizer_styles() {
+	// Addition style for blocks
+	wp_enqueue_style( 'blocks-scripts-editor', get_theme_file_uri( '/assets/css/blocks.css' ), false, wp_get_theme()->get( 'Version' ), 'all' );
+	wp_enqueue_style( 'blocks-style-editor', get_theme_file_uri( '/assets/css/blocks.css' ), false, wp_get_theme()->get( 'Version' ), 'all' );
+
+}
+add_action( 'enqueue_block_editor_assets', 'wpstarter_editor_customizer_styles' );
