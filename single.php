@@ -9,7 +9,7 @@ get_header();
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
-				get_template_part( 'template-parts/content/content', 'single' );
+				get_template_part( 'modules/content/content', 'single' );
 				if ( is_singular( 'attachment' ) ) {
 					// Parent post navigation.
 					the_post_navigation(
