@@ -7,6 +7,7 @@ const browsers = require( '@wordpress/browserslist-config' );
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
 const path = require( 'path' );
 const webpack = require( 'webpack' );
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = function() {
 
@@ -166,6 +167,11 @@ module.exports = function() {
             new webpack.DefinePlugin( {
                 'process.env.NODE_ENV': JSON.stringify( mode ),
             } ),
+			new BrowserSyncPlugin({
+				host: 'localhost',
+				port: 3000,
+				proxy: 'http://core.test'
+			}),
             function() {
                 // Custom webpack plugin - remove generated JS files that aren't needed
                 this.hooks.done.tap( 'webpack', function( stats ) {
