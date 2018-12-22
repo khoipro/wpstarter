@@ -12,9 +12,11 @@ Some of my code was taken from my older #WordPress base theme - **[wpbase](https
 - It has a **clean folder structure** with comments.
 - It has as much as many **example code** to keep you touch **Customizer**, **Widget**, **Custom Gutenberg Block** without installing a separate plugin.
 
+## Theme Detail
+
 - Author: [khoipro](https://twitter.com/khoiprodotcom)
 - License: GPL v3
-- State: **Beta**
+- State: **Beta**, planning to release official in **15 Jan 2019**
 
 ## Installation
 
