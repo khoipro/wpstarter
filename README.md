@@ -39,11 +39,18 @@ Some of my code was taken from my older #WordPress base theme - **[wpbase](https
 
 See `webpack.config.js` and edit `URL` param.
 
+### Change your theme name
+
+1. Search for `wpstarter` and replace with your text domain.
+2. Search for `WPStarter` and replace with your theme name.
+
 ## Structure
 
 It has two parts: **Backend** and **Frontend**
 
 ## Todo List
+
+### Development (First release)
 
 - [x] Add base theme from Twenty Nineteen
 - [x] Add **Webpack** + **BrowserSync** support
@@ -51,9 +58,16 @@ It has two parts: **Backend** and **Frontend**
 - [ ] Add full-width page template
 - [ ] Add custom widget example code
 - [ ] Add support for custom Gutenberg blocks (example module: **Hero Homepage**)
+- [ ] Add multilinguage support
+
+### Test, deploy and validation
+
 - [ ] Validate backend/frontend code sync flow
 - [ ] Deploy a demo
 - [ ] Test with some popular modules
+
+### Release
+
 - [ ] Add Unit Test Theme data
 - [ ] Release a theme to WordPress.org
 
