@@ -1,5 +1,7 @@
 # WPStarter
 
+![wordpress version support](https://img.shields.io/badge/WordPress-5.0+-blue.svg) ![gutenberg ready](https://img.shields.io/badge/Gutenberg-ready-green.svg) ![development status](https://img.shields.io/badge/Status-beta-red.svg)
+
 A Webpack WordPress Starter Theme for Gutenberg development with webpack, browsersync and SASS support. I'd like to keep a simple flow. As **#Gutenberg** ideas, I just try to bring as much as backend style will bring the same frontend style to match "what you see is what you get" (WYSIWYG).
 
 Some of my code was taken from my older #WordPress base theme - **[wpbase](https://github.com/khoipro/wpbase)**. This project was used with `gulpfile.js`, `livereload ` extension.
@@ -13,8 +15,6 @@ Some of my code was taken from my older #WordPress base theme - **[wpbase](https
 - Author: [khoipro](https://twitter.com/khoiprodotcom)
 - License: GPL v3
 - State: **Beta**
-
-![wordpress version support](https://img.shields.io/badge/WordPress-5.0+-blue.svg) ![gutenberg ready](https://img.shields.io/badge/Gutenberg-ready-green.svg) ![development status](https://img.shields.io/badge/Status-beta-red.svg)
 
 ## Installation
 
