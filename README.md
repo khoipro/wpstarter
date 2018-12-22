@@ -22,6 +22,18 @@ Some of my code was taken from my older #WordPress base theme - **[wpbase](https
 - License: GPL v3
 - State: **Beta**, planning to release official in **15 Jan 2019**
 
+## Theme Demo
+
+### Default
+- [Index page](https://wpstarter.khoi.pro)
+- ...
+
+### Default Styling with Gutenberg
+
+- [Typography](https://wpstarter.khoi.pro/typography/)
+- [Image Blocks](https://wpstarter.khoi.pro/blocks-image/)
+- ...
+
 ## Installation
 
 1. Navigation to your `wp-content/themes` folder
