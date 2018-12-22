@@ -3,7 +3,7 @@
 		<!-- TODO: Add Page Header -->
 	</header>
 
-	<div class="entry-content">
+	<div class="container entry-content">
 		<?php
 		the_content();
 		wp_link_pages(

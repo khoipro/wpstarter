@@ -14,7 +14,7 @@
 
 	<!-- Post Thumbnail -->
 
-	<div class="entry-content">
+	<div class="container entry-content">
 		<?php
 		the_content(
 			sprintf(
