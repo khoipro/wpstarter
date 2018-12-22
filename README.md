@@ -1,6 +1,8 @@
 # WPStarter
 
-A Webpack WordPress Starter Theme for Gutenberg development with webpack, browsersync and SASS support.
+A Webpack WordPress Starter Theme for Gutenberg development with webpack, browsersync and SASS support. I'd like to keep a simple flow. As **#Gutenberg** ideas, I just try to bring as much as backend style will bring the same frontend style to match "what you see is what you get" (WYSIWYG).
+
+Some of my code was taken from my older #WordPress base theme - [wpbase](https://github.com/khoipro/wpbase). This project was used with `gulpfile.js`, `livereload ` extension.
 
 - Author: [khoipro](https://twitter.com/khoiprodotcom)
 - License: GPL v3
@@ -32,12 +34,19 @@ It has two parts: **Backend** and **Frontend**
 ## Todo List
 
 - [x] Add base theme from Twenty Nineteen
-- [x] Add Webpack + BrowserSync support
-- [x] Add support for Customizer (global modules like Header, Footer)
+- [x] Add **Webpack** + **BrowserSync** support
+- [x] Add support for Customizer (example module: **Footer**)
+- [ ] Add full-width page template
+- [ ] Add custom widget example code
 - [ ] Validate backend/frontend code sync flow
 - [ ] Deploy a demo
+- [ ] Test with some popular modules
+- [ ] Add Unit Test Theme data
+- [ ] Release a theme to WordPress.org
 
-## Development Flow
+## Inspiration
 
-I'd like to keep a simple flow. As **#Gutenberg** ideas, I just try to bring as much as backend style will bring the same frontend style to match "what you see is what you get" (WYSIWYG).
+- [normalize.css, about reset css](https://github.com/necolas/normalize.css/blob/master/normalize.css)
+- [Twenty Nineteen, about WordPress backend and structure](https://github.com/WordPress/twentynineteen)
+- [WPScholar, about Webpack flow](https://github.com/wpscholar/)
 
