@@ -9,3 +9,7 @@ This loads any block styling for backend only
   @import 'base/typography';
   @import 'blocks/**/editor';
 }
+
+.editor-block-list__layout .editor-block-list__block.wp-block {
+  max-width: 100%;
+}
