@@ -11,4 +11,4 @@
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'wpstarter' ); ?></a>
 		<?php get_template_part('modules/header'); ?>
-		<div id="content" class="site-content">
+		<div id="content" class="site__content">
