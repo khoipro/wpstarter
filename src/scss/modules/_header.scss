@@ -35,18 +35,20 @@
   list-style: none;
   @include media('mobile') {
 	flex-direction: row;
+	margin: 0 -20px;
   }
 
   li {
 	@include media('mobile') {
+	  margin-bottom: 0;
 	  padding: 0 20px;
 	}
   }
 }
 
 .header__nav-toggle {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   padding: 0;
   @include media('mobile') {
 	display: none;
@@ -54,5 +56,5 @@
 }
 
 .header__nav-icon {
-  font-size: 15px;
+  font-size: 22px;
 }
