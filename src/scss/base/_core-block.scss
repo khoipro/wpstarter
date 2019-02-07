@@ -17,3 +17,9 @@ Cover Block
 .wp-block-cover-image {
   @extend %block;
 }
+
+.wp-block-media-text__content {
+  h2 {
+	margin-top: 0;
+  }
+}
