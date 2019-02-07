@@ -96,3 +96,7 @@ ul {
 	list-style: circle;
   }
 }
+
+p + p {
+  margin-top: 1em;
+}
