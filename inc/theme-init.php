@@ -143,3 +143,11 @@ function wpstarter_block_scripts() {
 	);
 }
 add_action( 'enqueue_block_assets', 'wpstarter_block_scripts' );
+
+/**
+ * Add font awesome 5
+ */
+function wpstarter_load_fonts() { ?>
+	<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<?php }
+add_action('wp_head', 'wpstarter_load_fonts');

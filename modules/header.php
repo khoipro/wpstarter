@@ -1,4 +1,4 @@
-<header class="header" id="masthead" id="masthead">
+<header class="header" id="masthead">
 	<div class="container header__container">
 		<div class="header__wrapper">
 			<div class="header__block header__block--logo">
@@ -36,7 +36,7 @@
 						?>
 					</nav><!-- #site-navigation -->
 					<button class="header__nav-toggle">
-						<span class="header__nav-icon"></span>
+						<span class="fas fa-bars header__nav-icon"></span>
 					</button>
 				</div>
 			<?php endif; ?>
