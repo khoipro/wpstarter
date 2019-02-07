@@ -135,9 +135,16 @@ function wpstarter_editor_customizer_styles() {
 add_action( 'enqueue_block_editor_assets', 'wpstarter_editor_customizer_styles' );
 
 function wpstarter_block_scripts() {
+	$site_url = site_url();
+	$path = '';
+
+	if (strpos($site_url, 'localhost') !== false) {
+		$path = '.min';
+	}
+
 	wp_enqueue_style(
 		'blocks-style',
-		get_theme_file_uri( '/assets/css/blocks.min.css' ),
+		get_theme_file_uri( '/assets/css/blocks' . $path . '.css' ),
 		[ 'wp-blocks' ],
 		wp_get_theme()->get( 'Version' )
 	);
