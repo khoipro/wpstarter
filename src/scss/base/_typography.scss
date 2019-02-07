@@ -23,7 +23,7 @@ body {
 
 %heading {
   font-family: $font-heading;
-  font-weight: 700;
+  font-weight: 600;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -37,8 +37,12 @@ body {
 }
 
 %block {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  @include media('mobile') {
+	margin-top: 1em;
+	margin-bottom: 1em;
+  }
 }
 
 p,
@@ -99,4 +103,16 @@ ul {
 
 p + p {
   margin-top: 1em;
+}
+
+p {
+  a,
+  a:visited {
+	color: $c-primary;
+	text-decoration: none;
+	transition: all 0.3s ease;
+  }
+  a:hover {
+	color: darken($c-primary, 10%);
+  }
 }

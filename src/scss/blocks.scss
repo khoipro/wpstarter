@@ -1,4 +1,7 @@
 /**
 This file loads block style in frontend only
  */
-@import 'blocks/**/style';
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'blocks/cover';

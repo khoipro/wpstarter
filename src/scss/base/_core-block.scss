@@ -18,8 +18,39 @@ Cover Block
   @extend %block;
 }
 
-.wp-block-media-text__content {
-  h2 {
-	margin-top: 0;
+/**
+Media Text Block
+ */
+.wp-block-media-text {
+  display: flex;
+  flex-wrap: wrap;
+  @include media('tablet') {
+	display: grid;
+  }
+
+  .wp-block-media-text__media {
+	margin-bottom: 1em;
+	@include media('tablet') {
+	  margin-bottom: 0;
+	}
+  }
+
+  .wp-block-media-text__media,
+  .wp-block-media-text__content {
+	width: 100%;
+	@include media('tablet') {
+	  width: auto;
+	}
+  }
+
+  .wp-block-media-text__content {
+	padding: 0;
+	@include media('tablet') {
+	  padding: 0 8% 0 8%;
+	}
+	h2 {
+	  margin-top: 0;
+	}
   }
 }
+

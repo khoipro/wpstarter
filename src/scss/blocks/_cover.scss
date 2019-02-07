@@ -1,0 +1,20 @@
+/**
+Block: Cover on first row
+ */
+
+.entry-content > :first-child {
+  &.wp-block-cover {
+	width: calc(100% + #{$container-gutter * 2});
+	margin: 0 #{$container-gutter * -1};
+	@include media(mobile) {
+	  width: calc(100% + #{$container-gutter-tablet * 2});
+	  margin: 0 #{$container-gutter-tablet * -1};
+	}
+  }
+}
+
+.entry-content > :not(:first-child) {
+  max-width: $container;
+  margin-left: auto;
+  margin-right: auto;
+}
