@@ -2,7 +2,7 @@
  * Customizer: Preview changes in backend
  */
 
-var wp = global.wp
+var wp = global.wp;
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -14,4 +14,4 @@ document.addEventListener('DOMContentLoaded', function () {
 			document.querySelector('.js-footer-copyright-text').innerHTML = newval
 		})
 	})
-})
+});

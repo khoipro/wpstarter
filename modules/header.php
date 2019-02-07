@@ -1,4 +1,4 @@
-<header class="header" id="masthead">
+<header class="header" id="masthead" data-module="header">
 	<div class="container header__container">
 		<div class="header__wrapper">
 			<div class="header__block header__block--logo">
@@ -35,7 +35,7 @@
 						);
 						?>
 					</nav><!-- #site-navigation -->
-					<button class="header__nav-toggle">
+					<button class="header__nav-toggle" data-toggle-nav>
 						<span class="fas fa-bars header__nav-icon"></span>
 					</button>
 				</div>
