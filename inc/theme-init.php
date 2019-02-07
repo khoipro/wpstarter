@@ -92,11 +92,19 @@ add_action( 'widgets_init', 'wpstarter_widgets_init' );
  */
 
 function wpstarter_scripts() {
-	// Register main styles and scripts
-	wp_enqueue_style( 'wpstarter-style', get_template_directory_uri() . '/assets/css/main.min.css', array(), wp_get_theme()->get( 'Version' ) );
-	wp_enqueue_style( 'blocks', get_template_directory_uri() . '/assets/css/blocks.min.css', array(), wp_get_theme()->get( 'Version' ) );
 
-	wp_enqueue_script( 'wpstarter-scripts', get_theme_file_uri( '/assets/js/main.min.js' ), array(), wp_get_theme()->get( 'Version' ), true );
+	$site_url = site_url();
+	$path = '';
+
+	if (strpos($site_url, 'localhost') !== false) {
+		$path = '.min';
+	}
+
+	// Register main styles and scripts
+	wp_enqueue_style( 'wpstarter-style', get_template_directory_uri() . '/assets/css/main' . $path . '.css', array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'blocks', get_template_directory_uri() . '/assets/css/blocks' . $path . '.css', array(), wp_get_theme()->get( 'Version' ) );
+
+	wp_enqueue_script( 'wpstarter-scripts', get_theme_file_uri( '/assets/js/main' . $path . '.js' ), array(), wp_get_theme()->get( 'Version' ), true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -107,11 +115,19 @@ add_action( 'wp_enqueue_scripts', 'wpstarter_scripts' );
  * Register Blocks and Editor in backend and frontend
  */
 function wpstarter_editor_customizer_styles() {
+
+	$site_url = site_url();
+	$path = '';
+
+	if (strpos($site_url, 'localhost') !== false) {
+		$path = '.min';
+	}
+
 	// Addition style for blocks
 	wp_enqueue_style( 'blocks-editor', get_theme_file_uri( '/assets/css/editor.min.css' ), false, wp_get_theme()->get( 'Version' ), 'all' );
 	wp_enqueue_script(
 		'blocks',
-		get_theme_file_uri( '/assets/js/blocks.min.js' ),
+		get_theme_file_uri( '/assets/js/blocks' . $path . '.js' ),
 		[ 'wp-blocks', 'wp-element', 'wp-components', 'wp-i18n' ],
 		wp_get_theme()->get( 'Version' )
 	);
